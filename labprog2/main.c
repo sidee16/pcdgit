@@ -1,5 +1,5 @@
 #include <stdio.h>
-int reverse(int num , int rev=0)
+int reverse(int num , int rev)
       {
     while(num != 0)
            {
