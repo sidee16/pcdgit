@@ -25,7 +25,7 @@ int main()
         f=sqrt(-d);
         rr=(-b/2*a);
         ir=(f/2*a);
-        printf("roots are complex r1=%lf+i%lf , r2=%lf+i%lf \n", rr,ir,rr,ir);
+        printf("roots are complex r1=%lf+i%lf , r2=%lf-i%lf \n", rr,ir,rr,ir);
     }
     return 0;
 }
