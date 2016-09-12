@@ -2,7 +2,7 @@
 #include <math.h>
 int main()
 {
-    double a,b,c,d,e,f,r1,r2,rr,ir;
+    double a,b,c,d,e,r1,r2,rr,ir;
     printf("enter the cofficientof the equation \n");
     scanf("%lf%lf%lf", &a,&b,&c);
    
@@ -22,9 +22,9 @@ int main()
     }
     else
     {
-        f=sqrt(-d);
+        e=sqrt(-d);
         rr=(-b/(2*a));
-        ir=(f/(2*a));
+        ir=(e/(2*a));
         printf("roots are complex r1=%lf+i%lf , r2=%lf-i%lf \n", rr,ir,rr,ir);
     }
     return 0;
