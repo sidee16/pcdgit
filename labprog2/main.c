@@ -2,11 +2,13 @@
 int reverse(int num)
       {
          int rev=0;
-    while(num != 0)
+         int temp;
+         temp=num;
+    while(temp != 0)
            {
         rev=rev*10;
-        rev=rev+num%10;
-        num=num/10;
+        rev=rev+temp%10;
+        temp=temp/10;
            }
     return rev;
       }
