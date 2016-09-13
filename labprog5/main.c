@@ -1,19 +1,20 @@
-
-#include <stdio.h>
+#include<stdio.h>
 int main()
 {
-  int a,b,c;
-  printf("enter three number \n");
-  scanf("%d%d%d", &a, &b, &c);
-  
-  if(a>b)
-       if (a>c)
-       printf("greatest of the three is: %d \n", a);
-       else
-       printf("greatest of the three is: %d \n", c);
-  else if(b>c)
-  printf("greatest of the three is: %d \n", b);
-  else
-  printf("greatest of the three is: %d \n", c);
-  return 0;
-} 
+float a[10],x,z=0;
+int i;
+printf("enter the coefficients\n");
+for(i=0;i<=4;i++)
+  {
+  printf("a[%d]=\n",i);
+  scanf("%f", &a[i]);
+  }
+printf("enter the value of x\n");
+scanf("%f", &x);
+for(i=4; i>=0; i--)
+{
+z=z*x+a[i];
+}
+printf("f(%f)=%f",x,z);
+return 0;
+}
