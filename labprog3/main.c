@@ -1,21 +1,24 @@
-
-#include <stdio.h>
-
+#include<stdio.h>
+#include<math.h>
+float squareroot(float x)
+{
+    float r1,r2,error;
+    r1=1;
+    r2=x/r1;
+    error=0.0001;
+while(fabs(r1-r2)>error)
+  {
+  r1=(r1+r2)/2;
+  r2=x/r1;
+  }
+return r1;
+}
 int main()
 {
-  int year;
-
-  printf("Enter a year to check if it is a leap year\n");
-  scanf("%d", &year);
-
-  if ( year%400 == 0)
-    printf("%d is a leap year.\n", year);
-  else if ( year%100 == 0)
-    printf("%d is not a leap year.\n", year);
-  else if ( year%4 == 0 )
-    printf("%d is a leap year.\n", year);
-  else
-    printf("%d is not a leap year.\n", year);
-
-  return 0;
+float x,b;
+printf("enter the number\n");
+scanf("%f",&x);
+b=sqrt(x);
+printf(" %f is the sqrt of the number\n",b);
+return 0;
 }
