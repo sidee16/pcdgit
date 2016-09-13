@@ -14,7 +14,7 @@ int main()
   int year ,r;
   printf("enter the year  :");
   scanf("%d",&year);
-  x=leap(year);
+  r=leap(year);
   if(r==0)
   {
     printf("it is a leap year\n");
