@@ -1,23 +1,25 @@
-#include <stdio.h>
-int leap(y)
-{
-  if(((y%4==0)&&(y%100!=0))||(y%400==0))
+#include<stdio.h>
+int ly(int y);
+
+ int ly(y)
+ {
+    if(((y%4==0)&&(y%100!=0))||(y%400==0))
     return 0;
-  else
+    else
     return 1;
-}
+ }
 
 int main()
 {
-  int year,r;
+  int x ,y;
   printf("enter the year  :");
-  scanf("%d\n",&year);
-  r=leap(year);
-  if(r==0)
+  scanf("%d",&y);
+  x=ly(y);
+  if(x==0)
   {
     printf("it is a leap year\n");
   }
-  else if(r==1)
+  else if(x==1)
   {
     printf("it is not a leap year\n");
   }
