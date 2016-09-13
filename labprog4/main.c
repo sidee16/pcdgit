@@ -1,31 +1,25 @@
 #include <stdio.h>
-#include <math.h>
+int leap(y)
+{
+  if(((y%4==0)&&(y%100!=0))||(y%400==0))
+    return 0;
+  else
+    return 1;
+}
+
 int main()
 {
-    double a,b,c,d,e,f,r1,r2,rr,ir;
-    printf("enter the cofficientof the equation \n");
-    scanf("%lf%lf%lf", &a,&b,&c);
-   
-    d=b*b-4*a*c ;
-   
-    if(d == 0)
-    {
-        r1=r2= -b/2*a;
-        printf("roots are equal r1=r2 %lf\n", r1);   
-    }
-    else if(d>0)
-    {
-        e=sqrt(d);    
-        r1=(-b+e)/2*a ;
-        r2=(-b-e)/2*a ;
-        printf("roots are real r1=%lf, r2=%lf\n", r1 , r2);
-    }
-    else
-    {
-        f=sqrt(-d);
-        rr=(-b/2*a);
-        ir=(f/2*a);
-        printf("roots are complex r1=%lf+i%lf , r2=%lf+i%lf \n", rr,ir,rr,ir);
-    }
-    return 0;
+  int year,r;
+  printf("enter the year  :");
+  scanf("%d\n",&year);
+  r=leap(year);
+  if(r==0)
+  {
+    printf("it is a leap year\n");
+  }
+  else if(r==1)
+  {
+    printf("it is not a leap year\n");
+  }
+  return 0;
 }
