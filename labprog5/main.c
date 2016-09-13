@@ -6,7 +6,7 @@ int i;
 printf("enter the coefficients\n");
 for(i=0;i<=4;i++)
   {
-  printf("a[%d]=\n",i);
+  printf("a[%d]= ",i);
   scanf("%f", &a[i]);
   }
 printf("enter the value of x\n");
