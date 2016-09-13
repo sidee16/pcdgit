@@ -5,7 +5,7 @@ float squareroot(float x)
     float r1,r2,error;
     r1=1;
     r2=x/r1;
-    error=0.0001;
+    error=0.000001;
 while(fabs(r1-r2)>error)
   {
   r1=(r1+r2)/2;
