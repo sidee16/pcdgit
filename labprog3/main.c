@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include<math.h>
-float squareroot(float x)
+float ssqrt(float x)
 {
     float r1,r2,error;
     r1=1;
@@ -18,7 +18,7 @@ int main()
 float x,b;
 printf("enter the number\n");
 scanf("%f",&x);
-b=sqrt(x);
+b=ssqrt(x);
 printf(" %f is the sqrt of the number\n",b);
 return 0;
 }
