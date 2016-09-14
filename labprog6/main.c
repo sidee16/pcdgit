@@ -1,17 +1,32 @@
 #include <stdio.h>
-int main()
+#include <stdlib.h>
+float taylor(float deg)
 {
-int i, n, sum;
-printf("enter the no. \n");
-scanf("%d", &n);
+ float x,sum,term;
+ int i;
 
+ x=((3.14/180)*deg);
 
-sum=0;
-for(i=1; i<=n; i++)
-{
-sum = sum + i;
+    term = x;
+    sum = x;
+
+    for(i=3; fabs(term) > 0.000001; i=i+2)
+    {
+       term= (-(term*x*x)/(i*(i-1)));
+       sum = sum + term;
+    }
+
+    return sum;
+
 }
 
-printf("sum of the %d no. is %d\n", n, sum);
-return 0;
+int main()
+{
+     float deg,r;
+    printf("enter the degree \n");
+    scanf("%f", &deg);
+    r=taylor(deg);
+    printf("sin(%f) = (%f)",deg,r);
+
+    return 0;
 }
