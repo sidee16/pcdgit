@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-float taylor(float deg)
+float sine(float deg)
 {
  float x,sum,term;
  int i;
@@ -25,8 +25,8 @@ int main()
      float deg,r;
     printf("enter the degree \n");
     scanf("%f", &deg);
-    r=taylor(deg);
-    printf("sin(%f) = (%f)",deg,r);
+    r=sine(deg);
+    printf("sine(%f) = (%f)",deg,r);
 
     return 0;
 }
