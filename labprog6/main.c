@@ -31,7 +31,7 @@ int main()
     q=((3.14/180)*deg);
     p=sin(q);
 
-    printf("value of sine (%f) = (%f)\n", deg ,p);
+    printf("value using predefined function sine(%f) = (%f)\n", deg ,p);
 
     return 0;
 }
