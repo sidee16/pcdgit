@@ -22,11 +22,16 @@ float sine(float deg)
 
 int main()
 {
-     float deg,r;
+     float deg,r,p,q;
     printf("enter the degree \n");
     scanf("%f", &deg);
     r=sine(deg);
-    printf("sine(%f) = (%f)",deg,r);
+    printf("using taylor series value of sine(%f) = (%f) \n",deg,r);
+
+    q=((3.14/180)*deg);
+    p=sin(q);
+
+    printf("value of sine (%f) = (%f)\n", deg ,p);
 
     return 0;
 }
