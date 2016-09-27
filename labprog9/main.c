@@ -4,6 +4,25 @@ int matrix(int m , int n, int p, int q, int a[m][n] , int b[p][q] )
 {
    int i,j,k;
 
+       printf("enter the matrices a(m*n) \n");
+         for(i=0 ; i<m ; i++)
+               {
+                   for(j=0 ; j<n ; j++)
+                        {
+                            printf("a[%d][%d]\n",i,j);
+                             scanf("%d",&a[i][j]);
+                         }
+                }
+
+      printf("enter the matrices b(p*q) \n");
+         for(i=0 ; i<p ; i++)
+               {
+                   for(j=0 ; j<q ; j++)
+                        {
+                            printf("b[%d][%d]\n",i,j);
+                             scanf("%d",&b[i][j]);
+                         }
+                 }
 
                  int c[100][100];
 
@@ -32,6 +51,8 @@ return c[i][j];
 }
 
 
+
+
 int main()
 {
   int a[100][100],b[100][100];
@@ -49,27 +70,6 @@ scanf("%d%d",&p,&q);
       }
   else {
 
-  int i,j;
-       printf("enter the matrices a(m*n) \n");
-         for(i=0 ; i<m ; i++)
-               {
-                   for(j=0 ; j<n ; j++)
-                        {
-                            printf("a[%d][%d]\n",i,j);
-                             scanf("%d",&a[i][j]);
-                         }
-                }
-
-      printf("enter the matrices b(p*q) \n");
-         for(i=0 ; i<p ; i++)
-               {
-                   for(j=0 ; j<q ; j++)
-                        {
-                            printf("b[%d][%d]\n",i,j);
-                             scanf("%d",&b[i][j]);
-                         }
-                 }
-
     r=matrix (m,n,p,q,a,b);
 
   }
@@ -77,5 +77,3 @@ scanf("%d%d",&p,&q);
 
 return 0;
 }
-
-
