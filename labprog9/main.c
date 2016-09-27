@@ -21,7 +21,7 @@ for(i=0 ; i<m ; i++)
     {
         for(j=0 ; j<q ; j++)
             {
-              printf("c[%d][%d]=%d",i,j,c[i][j]);
+            printf("c[%d][%d]=%d",i,j,c[i][j]);
             printf("\n");
             }
     }
@@ -67,10 +67,9 @@ int a[m][n],b[p][q],c[m][q];
                     }
                }
 
-
+printf("new matrix is\n ");
 r=matrix (m,n,a,p,q,b,c);
 
-    printf("new matrix is ");
     return r;
 
 
