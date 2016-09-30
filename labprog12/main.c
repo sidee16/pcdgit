@@ -3,19 +3,19 @@ int facto(int num)
 {
     int i,fact=1;
     
-    if(i==0)
+    if(num==0)
     {
         fact=1;
     }
     else
-    {
+    
+        {
         
-    for(i=num; i>1;i--)
+        for(i=num;i>1;i--)
         {
         fact=fact*i;
          }
-        
-    }
+   }
     
   return fact;
 }
