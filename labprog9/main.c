@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int matrix(int m, int n, int a[m][n], int p, int q, int b[p][q], int c[m][q])
+void matrix(int m, int n, int a[m][n], int p, int q, int b[p][q], int c[m][q])
 {
    int i,j,k;
 
@@ -26,7 +26,6 @@ for(i=0 ; i<m ; i++)
             }
     }
 
-return c[i][j];
 }
 
 
